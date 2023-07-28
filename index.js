@@ -9,7 +9,11 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/user", (req, res) => {
-    res.send("Express on Vercel 4 user route");
+    res.send("Express get user route");
+});
+
+app.get("/user/all", (req, res) => {
+    res.send("Express get all users route");
 });
 
 
