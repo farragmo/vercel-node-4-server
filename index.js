@@ -1,4 +1,5 @@
 const express = require("express");
+const { UserRouter } = require("./user.router");
 const app = express();
 app.get("/", (req, res) => {
     res.send("Express on Vercel 4");
@@ -19,6 +20,8 @@ app.post("/user", (req, res) => {
 app.get("/user/all", (req, res) => {
     res.send("Express get all users route");
 });
+
+app.use('/cust', UserRouter)
 
 
 
