@@ -12,6 +12,10 @@ app.get("/user", (req, res) => {
     res.send("Express get user route");
 });
 
+app.post("/user", (req, res) => {
+    res.send("Express create user route");
+});
+
 app.get("/user/all", (req, res) => {
     res.send("Express get all users route");
 });
