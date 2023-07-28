@@ -8,6 +8,10 @@ app.get("/about", (req, res) => {
     res.send("Express on Vercel 4 about route");
 });
 
+app.get("/user", (req, res) => {
+    res.send("Express on Vercel 4 user route");
+});
+
 
 
 app.listen(5000, () => {
