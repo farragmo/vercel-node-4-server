@@ -3,6 +3,13 @@ const app = express();
 app.get("/", (req, res) => {
     res.send("Express on Vercel 4");
 });
+
+app.get("/about", (req, res) => {
+    res.send("Express on Vercel 4 about route");
+});
+
+
+
 app.listen(5000, () => {
     console.log("Running on port 5000.");
 });
